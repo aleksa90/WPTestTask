@@ -7,6 +7,70 @@ Description: Test Task Fullstack Web Developer
 Version: 1.0.0
 */
 
-body {
+body.home {
     background: #F4F4F4;
+}
+
+.navbar.bg-body-tertiary {
+    background: #040404 !important;
+}
+
+.navbar-nav a{
+    color: #FFF;
+    font-family: Marcellus;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.navbar-nav {
+    display: inline-flex;
+    gap: 30px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.product-hover-block {
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position:absolute;
+    bottom: 30%;
+    left: 33%;
+    opacity: 0;
+}
+
+div.hover-area:hover .product-hover-block {
+    opacity: 1;
+    transition: opacity .3s;
+}
+div.hover-area {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.add_to_cart_button {
+    background-image: url('/wp-content/themes/testtask/assets/cart.svg');
+}
+
+.add_to_cart_button:hover {
+    background-image: url('/wp-content/themes/testtask/assets/cart-hover.svg');
+}
+
+.button-search {
+    background-image: url('/wp-content/themes/testtask/assets/search.svg');
+}
+
+.button-search:hover {
+    background-image: url('/wp-content/themes/testtask/assets/search-hover.svg');
 }

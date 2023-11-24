@@ -15,9 +15,20 @@
 
 <?php wp_body_open(); ?>
 
-<?php
-if ( function_exists( 'the_custom_logo' ) ) {
-    the_custom_logo();
-}
-wp_nav_menu(array('theme_location' => 'header-menu'));
-?>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#"><?php
+            if ( function_exists( 'the_custom_logo' ) ) {
+                the_custom_logo();
+            }?></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+                <?php testtask_main_menu(); ?>
+
+        </div>
+        <?php get_search_form(); ?>
+
+
+    </div>
+</nav>
