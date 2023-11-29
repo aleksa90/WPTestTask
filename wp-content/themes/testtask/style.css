@@ -7,6 +7,16 @@ Description: Test Task Fullstack Web Developer
 Version: 1.0.0
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+:root {
+    --Grey: #DFDFDF;
+    --Dark: #242424;
+    --Dark-Light:#777777;
+    --Gold:#C3935B;
+}
+
+
 body.home {
     background: #F4F4F4;
 }
@@ -35,6 +45,264 @@ section {
     margin-bottom: 100px;
 }
 
+/* Buttons */
+.button a {
+    text-decoration: none;
+}
+
+.button-size{
+    display: inline-flex;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius:0;
+}
+
+.button-text {
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 178.571% */
+    text-transform: uppercase;
+}
+
+.button-black-outline {
+    border: 1px solid var(--Grey, #DFDFDF);
+    color: var(--Dark, #242424);
+}
+
+.button-black-outline:hover{
+    background: var(--Grey, #DFDFDF);
+}
+
+.button-black {
+    background: var(--Dark-Light, #777);
+    color: #FFF;
+}
+
+.button-black:hover {
+    background: #000;
+    color: #FFF;
+}
+
+.button-white {
+    background: #FFF;
+    color: #000;
+}
+
+.button-white:hover {
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+.button-outline {
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+.button-outline:hover {
+    background: #FFF;
+    color: #000;
+}
+
+.button-gold {
+    background: var(--Gold, #C3935B);
+    color: #FFF;
+}
+
+.button-gold:hover {
+    background: #9D6C33;
+}
+
+
+.button-grey {
+    background: var(--Dark-Light, #777);
+    color: #FFF;
+}
+
+.button-grey:hover {
+    background: #585757;
+}
+
+/*section Slider*/
+.section-slider-text-1 {
+    color: #FFF;
+    font-family: Lora;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.section-slider-text-2 {
+    color: #FFF;
+    font-family: Marcellus;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    padding: 0.3em 0 0.6em 0;
+}
+
+.section-slider-text-3 {
+    color: #FFF;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 1.8em;
+}
+
+/* jewellery store section */
+.section-jewellery-store-text-1 {
+    color: var(--Gold, #C3935B);
+    text-align: center;
+    font-family: Lora;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px; /* 113.636% */
+}
+.section-jewellery-store-text-2 {
+    color: var(--Dark, #242424);
+    text-align: center;
+    font-family: Marcellus;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px; /* 120.968% */
+}
+.section-jewellery-store-text-3 {
+    color: var(--Dark, #242424);
+    text-align: center;
+    font-family: Marcellus;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px; /* 122.222% */
+}
+.section-jewellery-store-text-4 {
+    color: var(--Dark-Light, #777);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+/* featured products section */
+.section-featured-products-text-1 {
+    color: var(--Gold, #C3935B);
+    text-align: center;
+    font-family: Lora;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px; /* 113.636% */
+}
+
+.section-featured-products-text-2 {
+    color: var(--Dark, #242424);
+    text-align: center;
+    font-family: Marcellus;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */
+}
+
+.section-featured-products-text-3 {
+    color: var(--Dark-Light, #777);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+.hover-image {
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 25vw;
+}
+
+.hover-image div {
+    position: relative;
+    z-index: 1;
+    top: 41%;
+}
+
+.hover-image:hover div {
+    top:35%;
+}
+
+.zoom-in {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+            background-size: cover;
+            transform-origin: center;
+            transition: transform .4s ease-in-out;
+        }
+    }
+
+    .zoom-in {
+        &:focus,
+        &:hover {
+            & div {
+                transition: transform .4s ease-in-out;
+                bottom:10%;}
+            &::after {
+                transform: scale(1.05);
+
+            }
+        }
+    }
+
+.hover-image-text-1 {
+    color: #000;
+    text-align: center;
+    font-family: Lora;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 116.667% */
+}
+.hover-image-text-2 {
+    color: var(--Dark-Light, #777);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */}
+
+.hover-image-text-3 {
+    color: #000;
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
 .product-hover-block {
     background: #FFF;
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
@@ -45,7 +313,7 @@ section {
     gap: 8px;
     position:absolute;
     bottom: 30%;
-    left: 33%;
+    left: 38%;
     opacity: 0;
 }
 
@@ -59,18 +327,83 @@ div.hover-area {
     height: auto;
 }
 
+h3.product-title {
+    color: var(--Dark, #242424);
+    text-align: center;
+    font-family: Marcellus;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+h4.product-cat {
+    color: var(--Dark-Light, #777);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+div.product-price {
+    color: var(--Gold, #C3935B);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 178.571% */
+}
+
 .add_to_cart_button {
-    background-image: url('/wp-content/themes/testtask/assets/cart.svg');
+    background: url('/wp-content/themes/testtask/assets/cart.svg') no-repeat;
+    padding: 11px;
+    font-size: 0;
 }
 
 .add_to_cart_button:hover {
     background-image: url('/wp-content/themes/testtask/assets/cart-hover.svg');
+    background-repeat: no-repeat;
 }
 
 .button-search {
     background-image: url('/wp-content/themes/testtask/assets/search.svg');
+    background-repeat: no-repeat;
+    padding: 11px;
+    font-size: 0;
 }
 
 .button-search:hover {
     background-image: url('/wp-content/themes/testtask/assets/search-hover.svg');
+    background-repeat: no-repeat;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav span{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    display: block;
+    padding: 0 .3em !important;
+    font-size: 3em;
+    margin: 0;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot.owl-nav {
+    position: absolute;
+    right: -23px;
+    top: 50%;
+    display: block ;
+    padding: 0 .3em !important;
+    font-size: 3em ;
+    margin: 0;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
 }
