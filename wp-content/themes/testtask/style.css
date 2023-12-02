@@ -9,11 +9,12 @@ Version: 1.0.0
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
 :root {
     --Grey: #DFDFDF;
     --Dark: #242424;
-    --Dark-Light:#777777;
-    --Gold:#C3935B;
+    --Dark-Light: #777777;
+    --Gold: #C3935B;
 }
 
 
@@ -25,7 +26,7 @@ body.home {
     background: #040404 !important;
 }
 
-.navbar-nav a{
+.navbar-nav a {
     color: #FFF;
     font-family: Marcellus;
     font-size: 14px;
@@ -45,19 +46,34 @@ section {
     margin-bottom: 100px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.pad-20 {
+    padding: 0 20px;
+}
 /* Buttons */
-.button a {
+a {
+    color: unset;
     text-decoration: none;
 }
 
-.button-size{
+.button-size {
     display: inline-flex;
     padding: 10px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-    border-radius:0;
+    border-radius: 0;
 }
 
 .button-text {
@@ -74,7 +90,7 @@ section {
     color: var(--Dark, #242424);
 }
 
-.button-black-outline:hover{
+.button-black-outline:hover {
     background: var(--Grey, #DFDFDF);
 }
 
@@ -167,6 +183,7 @@ section {
     font-weight: 500;
     line-height: 25px; /* 113.636% */
 }
+
 .section-jewellery-store-text-2 {
     color: var(--Dark, #242424);
     text-align: center;
@@ -176,6 +193,7 @@ section {
     font-weight: 400;
     line-height: 75px; /* 120.968% */
 }
+
 .section-jewellery-store-text-3 {
     color: var(--Dark, #242424);
     text-align: center;
@@ -185,6 +203,7 @@ section {
     font-weight: 400;
     line-height: 55px; /* 122.222% */
 }
+
 .section-jewellery-store-text-4 {
     color: var(--Dark-Light, #777);
     text-align: center;
@@ -196,7 +215,8 @@ section {
 }
 
 /* featured products section */
-.section-featured-products-text-1 {
+.section-featured-products-text-1,
+.section-posts-text-1 {
     color: var(--Gold, #C3935B);
     text-align: center;
     font-family: Lora;
@@ -206,7 +226,8 @@ section {
     line-height: 25px; /* 113.636% */
 }
 
-.section-featured-products-text-2 {
+.section-featured-products-text-2,
+.section-posts-text-2 {
     color: var(--Dark, #242424);
     text-align: center;
     font-family: Marcellus;
@@ -216,7 +237,8 @@ section {
     line-height: 40px; /* 133.333% */
 }
 
-.section-featured-products-text-3 {
+.section-featured-products-text-3,
+.section-posts-text-3 {
     color: var(--Dark-Light, #777);
     text-align: center;
     font-family: Lora;
@@ -234,46 +256,48 @@ section {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    height: 25vw;
+    height: 370px;
 }
 
 .hover-image div {
     position: relative;
     z-index: 1;
-    top: 41%;
+    top: 38%;
 }
 
 .hover-image:hover div {
-    top:35%;
+    top: 35%;
 }
 
 .zoom-in {
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: inherit;
-            background-size: cover;
-            transform-origin: center;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        background-size: cover;
+        transform-origin: center;
+        transition: transform .4s ease-in-out;
+    }
+}
+
+.zoom-in {
+    &:focus,
+    &:hover {
+        & div {
             transition: transform .4s ease-in-out;
+            bottom: 10%;
+        }
+
+        &::after {
+            transform: scale(1.05);
+
         }
     }
-
-    .zoom-in {
-        &:focus,
-        &:hover {
-            & div {
-                transition: transform .4s ease-in-out;
-                bottom:10%;}
-            &::after {
-                transform: scale(1.05);
-
-            }
-        }
-    }
+}
 
 .hover-image-text-1 {
     color: #000;
@@ -284,6 +308,7 @@ section {
     font-weight: 400;
     line-height: 35px; /* 116.667% */
 }
+
 .hover-image-text-2 {
     color: var(--Dark-Light, #777);
     text-align: center;
@@ -291,10 +316,41 @@ section {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 178.571% */}
+    line-height: 25px; /* 178.571% */
+}
 
 .hover-image-text-3 {
     color: #000;
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+.hover-image-text-1-dark {
+    color: #FFF;
+    text-align: center;
+    font-family: Lora;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 116.667% */
+}
+
+.hover-image-text-2-dark {
+    color: var(--Grey, #DFDFDF);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+.hover-image-text-3-dark {
+    color: #FFF;
     text-align: center;
     font-family: Lora;
     font-size: 14px;
@@ -311,7 +367,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    position:absolute;
+    position: absolute;
     bottom: 30%;
     left: 38%;
     opacity: 0;
@@ -321,6 +377,7 @@ div.hover-area:hover .product-hover-block {
     opacity: 1;
     transition: opacity .3s;
 }
+
 div.hover-area {
     position: relative;
     width: 100%;
@@ -380,7 +437,7 @@ div.product-price {
     background-repeat: no-repeat;
 }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav span{
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.owl-nav span {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -396,14 +453,197 @@ div.product-price {
     position: absolute;
     right: -23px;
     top: 50%;
-    display: block ;
+    display: block;
     padding: 0 .3em !important;
-    font-size: 3em ;
+    font-size: 3em;
     margin: 0;
     cursor: pointer;
     transform: translate(-50%, -50%);
 }
 
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    color: #777777;
+}
+
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
+    color: #777777;
+}
+
+/* special offer section */
+.section-special-offer-text-1 {
+    color: var(--Gold, #C3935B);
+    font-family: Lora;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px; /* 113.636% */
+}
+
+.section-special-offer-text-2 {
+    color: var(--Dark, #242424);
+    font-family: Marcellus;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px; /* 120.968% */
+}
+
+.section-special-offer-text-3 {
+    color: var(--Dark, #242424);
+    font-family: Marcellus;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px; /* 122.222% */
+}
+
+/* section DISCOUNT
+ */
+
+.section-discount-text-1 {
+    display: flex;
+    color: var(--Dark, #242424);
+    font-family: Marcellus;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px; /* 120.968% */
+}
+
+.section-discount-text-1-gold {
+    color: var(--Gold, #C3935B);
+}
+
+.section-discount-text-2 {
+    color: var(--Dark, #242424);
+    font-family: Marcellus;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px; /* 122.222% */
+}
+
+.section-discount-text-3 {
+    color: var(--Dark-Light, #777);
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+ul.section-discount-list li{
+    background: url("/wp-content/themes/testtask/assets/diamonds.svg") no-repeat left;
+    list-style: none;
+    margin: 0;
+    padding-left: 35px;
+
+    color: var(--Dark-Light, #777);
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+
+/*
+Ad + FEATURED PRODUCTS + NEW PRODUCTS
+ */
+section.section-6 h3.product-title,
+section.section-6 div.product-price,
+.header-featured-new-products{
+    text-align: left;
+
+}
+.header-featured-new-products{
+    color: #000;
+    font-family: Marcellus;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+    text-transform: uppercase;
+}
+.ad-featured-new-products-section-image-text-1{
+    color: var(--Dark, #242424);
+    font-family: Lora;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px; /* 113.636% */
+    margin-bottom: 10px;
+}
+.ad-featured-new-products-section-image-text-2 {
+color: var(--Dark, #242424);
+font-family: Marcellus;
+font-size: 54px;
+font-style: normal;
+font-weight: 400;
+line-height: 65px; /* 120.37% */
+    margin-bottom: 10px;}
+
+.ad-featured-new-products-section-image-text-3 {
+    color: var(--Dark, #242424);
+    font-family: Marcellus;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.ad-featured-new-products-section-image {
+    width: 55%;
+    text-align: left;
+    float: right;
+    margin: 30px 0;
+}
+
+/* section posts */
+.post-title {
+    color: #000;
+    text-align: center;
+    font-family: Marcellus;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 145.833% */
+    text-transform: uppercase;
+}
+
+.continue-read {
+    color: var(--Gold, #C3935B);
+    text-align: center;
+    font-family: Lora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 178.571% */
+    text-transform: uppercase;
+}
+/*
+footer
+ */
+.footer {
+    background: #EAEAEA;
+}
+
+@media (min-width: 576px) {
+    .mb-30-mob{
+     margin-bottom: 30px;
+    }
+
+    .hover-image div {
+        position: relative;
+        z-index: 1;
+        top: 34%;
+    }
+
+    .hover-image:hover div {
+        top: 31%;
+    }
+
 }

@@ -9,11 +9,20 @@ add_theme_support('wp-block-styles');
 require get_template_directory() . '/customizer/customizer.php';
 new AddCustomizer();
 
-
-
 require get_template_directory() . '/parts/header-inc/logo.php';
 require get_template_directory() . '/parts/header-inc/main-menu.php';
 require get_template_directory() . '/parts/header-inc/search.php';
+
+require get_template_directory() . '/parts/frontpage-inc/section-1-banner.php';
+require get_template_directory() . '/parts/frontpage-inc/section-2-jewellery-store.php';
+require get_template_directory() . '/parts/frontpage-inc/section-3-feature-products.php';
+require get_template_directory() . '/parts/frontpage-inc/section-4-special-offer.php';
+require get_template_directory() . '/parts/frontpage-inc/section-5-discount.php';
+require get_template_directory() . '/parts/frontpage-inc/section-6-ad-feature-new.php';
+require get_template_directory() . '/parts/frontpage-inc/section-7-posts.php';
+
+require get_template_directory() . '/parts/woocommerce-inc/product-carousel-frontpage.php';
+require get_template_directory() . '/parts/woocommerce-inc/product-list-frontpage.php';
 require get_template_directory() . '/parts/widget-areas.php';
 
 function testtask_styles()
@@ -40,3 +49,5 @@ function testtask_scripts()
 
 add_action('wp_enqueue_scripts', 'testtask_scripts');
 
+add_image_size( 'frontpage-thumb', 65, 65, true );
+add_image_size( 'frontpage-blog-thumb', 345, 261, true );
