@@ -40,7 +40,7 @@ function section_1() {
                     if ($text != '') {
                         echo $text;
                     } ?>">
-                        <button type="button" class="btn button-size button-text button-white">
+                        <button type="button" class="btn button-size button-text button-white mr-10">
 
                             <?php
                             $text = get_theme_mod('banner-section-callout-button-1-text');

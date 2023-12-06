@@ -10,27 +10,27 @@ function section_2() {
                     echo $img ?>" alt="">
                 </div>
                 <div class="row-cols-md-1 col-lg-6">
-                    <div class="section-jewellery-store-text-1">
+                    <div class="section-jewellery-store-text-1 mb-10">
                         <?php
                         $text = get_theme_mod('jewellery-store-section-callout-text-block1');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-jewellery-store-text-2">
+                    <div class="section-jewellery-store-text-2 mb-10">
                         <?php
                         $text = get_theme_mod('jewellery-store-section-callout-text-block2');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-jewellery-store-text-3">   <?php
+                    <div class="section-jewellery-store-text-3 mb-10">   <?php
                         $text = get_theme_mod('jewellery-store-section-callout-text-block3');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-jewellery-store-text-4">
+                    <div class="section-jewellery-store-text-4 mb-30">
                         <?php
                         $text = get_theme_mod('jewellery-store-section-callout-text-block4');
                         if ($text != '') {
@@ -44,7 +44,7 @@ function section_2() {
                         echo $text;
                     } ?>">
                         <button type="button"
-                                class="btn button-size button-text button-black">
+                                class="btn button-size button-text button-black mr-10">
                             <?php
                             $text = get_theme_mod('jewellery-store-section-callout-button-1-text');
                             if ($text != '') {

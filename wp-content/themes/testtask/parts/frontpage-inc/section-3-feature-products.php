@@ -7,14 +7,14 @@ function section_3()
         <div class="container text-center">
             <div class="row align-items-center mb-50">
                 <div class="col-12">
-                    <div class="section-featured-products-text-1">
+                    <div class="section-featured-products-text-1 mb-10">
                         <?php
                         $text = get_theme_mod('featured-products-section-callout-text-block1');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-featured-products-text-2">
+                    <div class="section-featured-products-text-2 mb-10">
                         <?php
                         $text = get_theme_mod('featured-products-section-callout-text-block2');
                         if ($text != '') {
@@ -37,14 +37,14 @@ function section_3()
                          style="background-image: url('<?php $img = get_theme_mod('featured-products-section-callout-image1');
                          echo $img ?>');">
                         <div>
-                            <div class="hover-image-text-1">
+                            <div class="hover-image-text-1 w-75 mb-10">
                                 <?php
                                 $text = get_theme_mod('featured-products-section-callout-text-on-image-1');
                                 if ($text != '') {
                                     echo $text;
                                 } ?>
                             </div>
-                            <div class="hover-image-text-2">
+                            <div class="hover-image-text-2 mb-20">
                                 <?php
                                 $text = get_theme_mod('featured-products-section-callout-text-on-image-2');
                                 if ($text != '') {
@@ -81,14 +81,14 @@ function section_3()
                          style="background-image: url('<?php $img = get_theme_mod('featured-products-section-callout-image2');
                          echo $img ?>');">
                         <div>
-                            <div class="hover-image-text-1-dark">
+                            <div class="hover-image-text-1-dark  w-75 mb-10">
                                 <?php
                                 $text = get_theme_mod('featured-products-section-callout-text-on-image-1-row-2');
                                 if ($text != '') {
                                     echo $text;
                                 } ?>
                             </div>
-                            <div class="hover-image-text-2-dark">
+                            <div class="hover-image-text-2-dark mb-20">
                                 <?php
                                 $text = get_theme_mod('featured-products-section-callout-text-on-image-2-row-2');
                                 if ($text != '') {

@@ -16,21 +16,21 @@ function section_4()
                             allowfullscreen></iframe>
                 </div>
                 <div class="row-cols-sm-1 col-lg-6">
-                    <div class="section-special-offer-text-1">
+                    <div class="section-special-offer-text-1 mb-10">
                         <?php
                         $text = get_theme_mod('special-offer-section-callout-text-block1');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-special-offer-text-2">
+                    <div class="section-special-offer-text-2 mb-10">
                         <?php
                         $text = get_theme_mod('special-offer-section-callout-text-block2');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-special-offer-text-3">   <?php
+                    <div class="section-special-offer-text-3 mb-10">   <?php
                         $text = get_theme_mod('special-offer-section-callout-text-block3');
                         if ($text != '') {
                             echo $text;

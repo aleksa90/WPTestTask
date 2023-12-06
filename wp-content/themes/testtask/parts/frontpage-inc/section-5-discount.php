@@ -5,7 +5,7 @@ function section_5()
         <div class="container">
             <div class="row">
                 <div class="row-cols-sm-1 col-lg-6 mb-30">
-                    <div class="section-discount-text-1">
+                    <div class="section-discount-text-1 mb-10">
                         <?php
                         $text = get_theme_mod('discount-section-callout-text-block1');
                         if ($text != '') {
@@ -20,14 +20,14 @@ function section_5()
                             } ?>
                         </div>
                     </div>
-                    <div class="section-discount-text-2">
+                    <div class="section-discount-text-2 mb-10">
                         <?php
                         $text = get_theme_mod('discount-section-callout-text-block3');
                         if ($text != '') {
                             echo $text;
                         } ?>
                     </div>
-                    <div class="section-discount-text-3">   <?php
+                    <div class="section-discount-text-3 mb-10">   <?php
                         $text = get_theme_mod('discount-section-callout-text-block4');
                         if ($text != '') {
                             echo $text;
@@ -74,7 +74,7 @@ function section_5()
                         echo $text;
                     } ?>">
                         <button type="button"
-                                class="btn button-size button-text button-black">
+                                class="btn button-size button-text button-black mr-10">
                             <?php
                             $text = get_theme_mod('discount-section-callout-button-1-text');
                             if ($text != '') {
