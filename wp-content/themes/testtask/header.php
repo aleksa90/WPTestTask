@@ -26,7 +26,12 @@
                     } ?></a>
             </li>
             <li class="menu-item">
-                <?php testtask_main_menu(); ?>
+                <nav id="menu" class="mobile-menu">
+                    <?php testtask_main_menu(); ?>
+                </nav>
+
+                <a href="#menu" class="mobile-menu__opener" id="mobile-menu__opener" role="button" tabindex="0"><span>Menu</span></a>
+                <div class="mobile-menu__screen"></div>
 
             </li>
             <li class="menu-item header-link">
@@ -43,6 +48,9 @@
                 </a></li>
 
         </ul>
+
+
+
         <div class="search-form">
             <form>
                 <?php get_search_form(); ?>
